@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            html{
+                overflow-y:hidden;
+                overflow-x:hidden;
+                margin: 0px;
+            }
+            body {
+                margin: 0px;
+                border: none;
+            }
+            
+            a.buttonMain{
+                border: solid 2px darkblue;
+                color: #eee;
+                position: absolute;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-decoration: none;
+                font-size: 30px;
+                padding: 10px;
+            }
+
+            a.buttonMain:hover{
+                background-color: darkblue;
+                color: white;
+                transition: 1s;
+            }
+
+            img#imageMain{
+                height: 100%;
+                width: 110%;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-left: 0px;
+                margin-bottom: 0px;
+                align-self: center;
+            }
+
+            *:hover{
+                animation: 1s;
+            }
+
+            p{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+                font-size: 70px;
+                color: white;
+                text-shadow: #000 1px -1px 2px, 
+					         #000 -1px 1px 2px, 
+					         #000 1px 1px 2px, 
+					         #000 -1px -1px 2px;
+            }
+
+            span#marv{
+                color: darkblue;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 100px;
+                text-shadow: white 2px -2px, white -2px 2px, white 2px 2px, white -2px -2px;
+            }
+
+            span#log{
+                color: red;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 100px;
+                text-shadow:white 2px -2px, white -2px 2px, white 2px 2px, white -2px -2px;
+            }
+
+            span#trans{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 30px;
+                color: white;
+            }
+
+            div#all{
+                left: 50%;
+                margin-left: -50%;
+                position: absolute;
+                width: 100%;
+            }
+
+            div#title{
+                top: 10%;
+                left: 50%;
+                margin-left: -50%;
+                position: absolute;
+                width: 100%;
+            }
+
+            a#a1{
+                top: 50%;
+                left: 30%;
+                margin-left: -5%;
+                position: absolute;
+                width: 20%;
+                height: 60px;
+                text-align: center;
+                text-shadow: #000 1px -1px 1px, 
+					         #000 -1px 1px 1px, 
+					         #000 1px 1px 1px, 
+					         #000 -1px -1px 1px;
+            }
+
+            a#a2{
+                top: 50%;
+                left: 60%;
+                margin-left: -5%;
+                position: absolute;
+                width: 20%;
+                height: 60px;
+                text-align: center;
+                text-shadow: #000 1px -1px 1px, 
+					         #000 -1px 1px 1px, 
+					         #000 1px 1px 1px, 
+					         #000 -1px -1px 1px;
+            }
+
+        </style>
+        <script language='JavaScript'>
+            function bloquear(e){return false}
+            function desbloquear(){return true}
+            document.onselectstart=new Function (&quot;return false&quot;)
+            if (window.sidebar){document.onmousedown=bloquear
+                document.onclick=desbloquear}
+        </script>
+    </head>
+    <body onselectstart='return false' ondragstart='return false'>
+        <center>
+            <div id="all">
+                <div id="title"><span id="marv">Marv</span><span id="log"> Log</span>
+                    <br>
+                    <center><span id="trans">Serviços de transportes</span></center>
+                    <p>A melhor solução para sua empresa</p>
+                </div>
+            <img src="http://i.imgur.com/VyLcJ.jpg" alt="An city image" id="imageMain"/>
+                <div id="button">
+                    <a href="http://www.sysweb7.com.br/marvlog/" class="buttonMain" id="a1">Painel do cliente</a>
+                    <a href="main.html" class="buttonMain" id="a2">Acessar site</a>
+                </div>
+            </div>
+        </center>
+        <!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = '25BstyaN6t';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
+    </body>
+</html>
